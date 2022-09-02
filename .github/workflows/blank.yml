@@ -6,12 +6,10 @@ jobs:
     strategy:
       matrix:
         node: [12, 14, 16]
-        node1: [window,ubunut,os]
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node1 }}
-          node-version1: ${{ matrix.node1 }}
+          node-version: ${{ matrix.node }}
 
 
 # jobs:
